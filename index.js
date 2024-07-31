@@ -45,7 +45,7 @@ const authenticateToken=(request,response,next)=>{
     }
 }
 app.get("/",(request,response)=>{
-    response.send("anji")
+    response.send("Deployment Successfull")
 })
 app.post("/register/",async (request,response)=>{
     const {username,email,password,role}=request.body;

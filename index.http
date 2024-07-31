@@ -30,7 +30,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhd
         "inventoryCount":12
     }
 ###
-GET http://localhost:3000/products/ 
+GET https://syoft-node-assignment.onrender.com/products/ 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJlbWFpbCI6InJhdmlrdW1hcjEyMUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjI0MTE3NDR9.Ci1JsY2xUZKi7Cuf57nUGeEeIQEQVihtEQXgGG-TP_0
 ###
 PUT http://localhost:3000/products/3/
