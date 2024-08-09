@@ -1,42 +1,42 @@
 ###
-GET http://localhost:3000/
+GET https://syoft-node-assignment-2.onrender.com/
 ###
 
 
-POST http://localhost:3000/register/ 
+POST https://syoft-node-assignment-2.onrender.com/register/ 
 Content-Type:application/json 
 
     {
-        "username":"anji",
-        "email":"anji123@gmail.com",
-        "password":"anji@123",
+        "username":"mahesh",
+        "email":"maesh123@gmail.com",
+        "password":"maesh@123",
         "role":"admin"
     }
 ###
-POST http://localhost:3000/login/
+POST https://syoft-node-assignment-2.onrender.com/login/
 Content-Type: application/json 
 
 {
-    "email":"anji123@gmail.com",
-    "password":"anji@123"
+    "email":"maesh123@gmail.com",
+    "password":"maesh@123"
 }
 ###
-POST http://localhost:3000/products/
+POST https://syoft-node-assignment-2.onrender.com/products/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuamkiLCJlbWFpbCI6ImFuamkxMjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIzMTgzNDQyfQ.YpGFIBb6ZEburCQxKs2ASK3091z0RkaETFAHqQE8jLE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1haGVzaCIsImVtYWlsIjoibWFlc2gxMjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIzMTg2MzEyfQ.U3gWGUF1qQyfR7NKAs9k-hnMdZ-AclXxyLieEIhL0_o
 
     {
-        "title":"paper",
-        "description":"this is a paper.",
-        "inventoryCount":20
+        "title":"pen",
+        "description":"this is a pen.",
+        "inventoryCount":50
     }
 ###
-GET http://localhost:3000/products/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJlbWFpbCI6InJhdmlrdW1hcjEyMUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjI0MTE3NDR9.Ci1JsY2xUZKi7Cuf57nUGeEeIQEQVihtEQXgGG-TP_0
+GET https://syoft-node-assignment-2.onrender.com/products/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1haGVzaCIsImVtYWlsIjoibWFlc2gxMjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIzMTg2MzEyfQ.U3gWGUF1qQyfR7NKAs9k-hnMdZ-AclXxyLieEIhL0_o
 ###
-PUT http://localhost:3000/products/1/
+PUT https://syoft-node-assignment-2.onrender.com/products/2/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJlbWFpbCI6InJhdmlrdW1hcjEyMUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjI0MTE3NDR9.Ci1JsY2xUZKi7Cuf57nUGeEeIQEQVihtEQXgGG-TP_0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1haGVzaCIsImVtYWlsIjoibWFlc2gxMjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIzMTg2MzEyfQ.U3gWGUF1qQyfR7NKAs9k-hnMdZ-AclXxyLieEIhL0_o
 
 {   
     "title":"fridge",
@@ -44,5 +44,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhd
     "inventoryCount":75
 }
 ###
-DELETE http://localhost:3000/products/2/ 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJlbWFpbCI6InJhdmlrdW1hcjEyMUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjI0MTE3NDR9.Ci1JsY2xUZKi7Cuf57nUGeEeIQEQVihtEQXgGG-TP_0
+DELETE https://syoft-node-assignment-2.onrender.com/products/2/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1haGVzaCIsImVtYWlsIjoibWFlc2gxMjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIzMTg2MzEyfQ.U3gWGUF1qQyfR7NKAs9k-hnMdZ-AclXxyLieEIhL0_o
