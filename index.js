@@ -65,7 +65,7 @@ app.post("/register/",async (request,response)=>{
                 ('${username}','${email}','${hashedPasword}','${role}')
         `;
         await db.run(postt);
-        response.status(200);
+        response.status(201);
         response.send("User created");
     }
 })
@@ -76,18 +76,17 @@ app.post("/login/",async (request,response)=>{
     `
     const dbUser=await db.get(getUsersQuery); 
     if (dbUser===undefined){
-        response.status(400)
+        response.status(401)
         response.send("Invalid user")
     }else{
         const isPasswordCorrect=await bcrypt.compare(password,dbUser.password);
         if (isPasswordCorrect===true){
             const payload={username:dbUser.username,email:email,role:dbUser.role};
             const jwtToken=jwt.sign(payload,"jwt_token");
-            console.log(payload);
             response.status(200);
             response.send(jwtToken);
         }else{
-            response.status(400)
+            response.status(401)
             response.send("Invalid password")
         }
     }
